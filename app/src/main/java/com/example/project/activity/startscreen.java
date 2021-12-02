@@ -43,13 +43,14 @@ public class startscreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startscreen);
+        Intent intent = getIntent();
 
         start=(TextView) findViewById(R.id.startView);
         datatype a=new datatype();
         a.setName("dd");
         NetworkTask networkTask = new NetworkTask(serverurl,a);
         networkTask.execute();
-        Intent intent = getIntent();
+
 
 
         start.setOnTouchListener(new View.OnTouchListener(){

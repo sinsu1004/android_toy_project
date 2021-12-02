@@ -18,107 +18,162 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="GAME"
-                android:textAlignment="center"
-                android:textSize="90sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-        </LinearLayout>
+            android:padding="5dp"
+            android:layout_height="120dp"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform" />
 
         <TableLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="22dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-                <Button
+                <ImageButton
                     android:id="@+id/movie"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="20dp"
+                    android:layout_height="115dp"
                     android:layout_marginLeft="20dp"
-                    android:text="영화"
-                    android:textSize="20dp" />
+                    android:src="@drawable/cinema"
+                    android:background="@color/white"
+                    android:scaleType="centerInside"
+                     />
 
-                <Button
+                <ImageButton
                     android:id="@+id/drama"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:src="@drawable/drama"
+                    android:layout_width="100dp"
+                    android:layout_height="115dp"
                     android:layout_marginLeft="40dp"
-                    android:text="drama"
-                    android:textSize="20dp" />
+                    android:background="@color/white"
+                    android:scaleType="centerInside"
+                    />
 
 
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_marginLeft="70dp"
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="영화" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_marginLeft="85dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="드라마" />
             </TableRow>
 
             <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
 
                 >
 
-                <Button
+                <ImageButton
                     android:id="@+id/movie2"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="130dp"
+                    android:layout_height="115dp"
+                    android:src="@drawable/sports"
                     android:layout_marginLeft="20dp"
-                    android:text="comming son"
-                    android:textSize="20dp" />
+                    android:background="@color/white"
+                    android:scaleType="centerInside"
+                    />
 
-                <Button
+                <ImageButton
                     android:id="@+id/drama2"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:src="@drawable/face"
+                    android:layout_width="130dp"
+                    android:layout_height="115dp"
                     android:layout_marginLeft="40dp"
-                    android:text="comming son"
-                    android:textSize="20dp" />
+                    android:background="@color/white"
+                    android:scaleType="centerInside"
+                     />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_marginLeft="70dp"
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="운동" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_marginLeft="90dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="감정" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
 
                 >
 
-                <Button
+                <ImageButton
                     android:id="@+id/movie3"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:src="@drawable/ss"
+                    android:layout_width="130dp"
+                    android:layout_height="115dp"
                     android:layout_marginLeft="20dp"
-                    android:text="comming son"
-                    android:textSize="20dp" />
+                    android:background="@color/white"
+                    android:scaleType="centerInside"
+                 />
 
-                <Button
+                <ImageButton
+                    android:src="@drawable/animal"
                     android:id="@+id/drama3"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="130dp"
+                    android:layout_height="115dp"
                     android:layout_marginLeft="40dp"
-                    android:text="comming son"
-                    android:textSize="20dp" />
+                    android:background="@color/white"
+                    android:scaleType="centerInside"
+                     />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="속담" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_marginLeft="90dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="동물" />
             </TableRow>
 
         </TableLayout>

@@ -123,7 +123,7 @@ public class test2Activity extends AppCompatActivity {
                    problem.setText((String) namelist.get(0));
                    namelist.remove(0);
                    truenum++;
-                   truetext.setText("정답개수: " + truenum + "남은 PASS 횟수: " + String.valueOf(passnum));
+                   truetext.setText("정답개수: " + truenum + "  남은 PASS 횟수: " + String.valueOf(passnum));
                }
                else{
                    problem.setText("남은 문제가 없습니다 ㅎㅎ");

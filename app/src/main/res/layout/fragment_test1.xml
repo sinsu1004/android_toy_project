@@ -50,12 +50,16 @@
                 android:textAlignment="center"
                 android:textStyle="italic" />
 
-            <Button
-                android:id="@+id/back_bt"
+
+            <ImageButton
                 android:layout_gravity="right"
-                android:layout_width="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/back_bt"
+                android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:text="되돌리기" />
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/back" />
+
 
         </LinearLayout>
 

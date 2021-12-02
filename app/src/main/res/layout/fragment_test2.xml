@@ -47,7 +47,7 @@
                 android:layout_width="335dp"
                 android:layout_height="wrap_content"
                 android:digits="0123456789"
-                android:hint="카운트 시간을 입력해주세요 초단위(기본값 60초)"
+                android:hint="카운트 시간을 입력해주세요 초단위(기본값 30초)"
                 android:inputType="number" />
 
             <Button

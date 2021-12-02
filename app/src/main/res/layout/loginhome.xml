@@ -27,7 +27,17 @@
             android:layout_gravity="center"
             android:layout_width="300dp"
             android:layout_height="200dp"
-            app:srcCompat="@drawable/test" />
+            app:srcCompat="@drawable/weno" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#00BFFE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="WENO" />
 
         <TextView
             android:id="@+id/textView"
@@ -79,7 +89,7 @@
             android:layout_gravity="center"
             android:layout_width="130dp"
             android:layout_height="130dp"
-
+            android:visibility="invisible"
             app:srcCompat="@drawable/touch" />
 
     </LinearLayout>

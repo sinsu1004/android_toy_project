@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,7 +31,7 @@ public class Fragment_test1 extends Fragment {
     private Button save;
     private Button start2;
     private Button save2;
-    private Button back_bt;
+    private ImageButton back_bt;
     private EditText problems;
     private String problemview="";
     private ArrayList<String> problemlist=new ArrayList<>();

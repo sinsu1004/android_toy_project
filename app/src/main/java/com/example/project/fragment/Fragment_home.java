@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,7 +19,7 @@ import com.example.project.activity.startproblem;
 
 public class Fragment_home extends Fragment {
     public Fragment_home() {}
-    private Button bodyspeak_button;
+    private ImageButton bodyspeak_button;
 
     public static Fragment_home newInstance() {
         Fragment_home calendarFragment= new Fragment_home();
@@ -38,6 +39,7 @@ public class Fragment_home extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getActivity(), MainActivity.class);
+                intent.putExtra("name","몸으로 말해요");
                 startActivity(intent);
             }
         });

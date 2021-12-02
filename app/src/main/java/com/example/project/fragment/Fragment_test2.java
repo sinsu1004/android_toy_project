@@ -51,8 +51,8 @@ public class Fragment_test2 extends Fragment {
 
 
         textView5.setText(((settings)getActivity().getApplication()).getNickname()+"님");
-        nowcount.setText("카운트 시간 : " +Integer.toString(((settings)getActivity().getApplication()).getCount()));
-        nowpass.setText("PASS 개수 : " +Integer.toString(((settings)getActivity().getApplication()).getPasscount()));
+        nowcount.setText("카운트 시간 : " +Integer.toString(((settings)getActivity().getApplication()).getCount())+"초");
+        nowpass.setText("PASS 개수 : " +Integer.toString(((settings)getActivity().getApplication()).getPasscount())+"개");
 
         count_bt.setOnClickListener(new View.OnClickListener(){
 
@@ -65,7 +65,7 @@ public class Fragment_test2 extends Fragment {
                 }
                 else if(count_bt.getText().equals("저장")) {
                     ((settings) getActivity().getApplication()).setCount(Integer.parseInt(count.getText().toString()));
-                    nowcount.setText("카운트 시간 : " + ((settings) getActivity().getApplication()).getCount());
+                    nowcount.setText("카운트 시간 : " + ((settings) getActivity().getApplication()).getCount()+"초");
                     count.setEnabled(false);
                     count_bt.setText("수정");
                 }
@@ -84,7 +84,7 @@ public class Fragment_test2 extends Fragment {
                 }
                 else if(passcount_bt.getText().equals("저장")) {
                     ((settings) getActivity().getApplication()).setPasscount(Integer.parseInt(passcount.getText().toString()));
-                    nowpass.setText("PASS 개수 : " + passcount.getText().toString());
+                    nowpass.setText("PASS 개수 : " + passcount.getText().toString()+"개");
                     passcount.setEnabled(false);
                     passcount_bt.setText("수정");
                 }

@@ -10,6 +10,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.project.R;
@@ -22,8 +23,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        Button a1=(Button) findViewById(R.id.movie);
+        Intent intent = getIntent();
+        String name= (String) intent.getSerializableExtra("name");
+
+        ImageButton a1=findViewById(R.id.movie);
         TextView a3=(TextView) findViewById(R.id.textView2);
+        a3.setText(name);
 
 
         a1.setOnClickListener(new View.OnClickListener(){
