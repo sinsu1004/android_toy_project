@@ -94,13 +94,20 @@
             android:gravity="center"
             android:text="PASS 개수 : 3" />
 
-        <Button
-            android:id="@+id/settingon"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
-            android:text="설정 저장"
-            android:textSize="60dp" />
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/settingon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="설정 저장" />
+        </LinearLayout>
 
 
     </LinearLayout>

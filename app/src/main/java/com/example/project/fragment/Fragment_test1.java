@@ -61,6 +61,7 @@ public class Fragment_test1 extends Fragment {
             save.setEnabled(false);
             save2.setEnabled(false);
             start2.setEnabled(false);
+            back_bt.setEnabled(false);
             String data=((settings)getActivity().getApplication()).getData();
             data=data.replace("1","\n");
             textView.setText(data);
