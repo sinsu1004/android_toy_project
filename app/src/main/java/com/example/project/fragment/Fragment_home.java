@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.project.R;
 import com.example.project.activity.MainActivity;
+import com.example.project.activity.humanquiz;
 import com.example.project.activity.koreagame;
 import com.example.project.activity.startproblem;
 
@@ -69,7 +70,7 @@ public class Fragment_home extends Fragment {
         humanquiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getActivity(), MainActivity.class);
+                Intent intent=new Intent(getActivity(), humanquiz.class);
                 intent.putExtra("name","인물 퀴즈");
                 startActivity(intent);
             }

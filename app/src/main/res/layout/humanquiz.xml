@@ -5,55 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
-        android:id="@+id/layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="409dp"
+        android:layout_height="601dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:gravity="center"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/time"
-            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@+id/textView20"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:autoSizeTextType="uniform"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            />
+            android:textColor="@color/black"
+            android:text="TextView" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:scaleType="fitXY" />
-
-        <TextView
-            android:id="@+id/problem"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:layout_marginTop="10dp"
-            android:autoSizeTextType="uniform"
-            android:textAlignment="center" />
-
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageView5"
+            android:layout_width="230dp"
+            android:layout_height="330dp"
+            tools:srcCompat="@tools:sample/avatars" />
         <LinearLayout
             android:id="@+id/layout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/next"
+                android:id="@+id/next2"
                 android:background="#00BFFE"
                 android:textSize="20dp"
                 android:layout_width="100dp"
@@ -64,7 +53,8 @@
                 android:textAlignment="center" />
 
             <Button
-                android:id="@+id/pass"
+
+                android:id="@+id/pass2"
                 android:background="#00BFFE"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
@@ -73,15 +63,5 @@
                 android:text="PASS"
                 android:textAlignment="center" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/truetext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:autoSizeTextType="uniform"
-            android:text="" />
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
