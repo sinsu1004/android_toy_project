@@ -50,6 +50,7 @@ public class startproblem extends AppCompatActivity {
         passcount=((settings) getApplication()).getPasscount();
 
         Intent intent = getIntent();
+
         ArrayList<String> list = (ArrayList<String>) intent.getSerializableExtra("problemlist");
         Collections.shuffle(list);
         main.setText(list.get(0));
@@ -59,55 +60,38 @@ public class startproblem extends AppCompatActivity {
         Toast.makeText(getApplication(), "정답개수: " + 0 + "  남은 PASS 횟수: " + passcount, Toast.LENGTH_LONG).show();
 
         usernext.setOnClickListener(new View.OnClickListener() {
-
             @Override
-            public void onClick(View view) {
-                if(list.size()!=0) {
-                    truecount++;
-                    main.setText(list.get(0));
-                    list.remove(0);
-                    usertruetext.setText("정답개수: " + truecount + "  남은 PASS 횟수: " + passcount);
-                }else{
-                    Toast.makeText(getApplication(), "남은 제시어가 없습니다", Toast.LENGTH_LONG).show();
-                }
-
-            }
-        });
-        userpass.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                if(list.size()!=0) {
-                    if(passcount!=0) {
-                        passcount--;
+                public void onClick(View view) {
+                    if (list.size() != 0) {
+                        truecount++;
                         main.setText(list.get(0));
                         list.remove(0);
                         usertruetext.setText("정답개수: " + truecount + "  남은 PASS 횟수: " + passcount);
+                    } else {
+                        Toast.makeText(getApplication(), "남은 제시어가 없습니다", Toast.LENGTH_LONG).show();
                     }
-                    else {
-                        Toast.makeText(getApplication(), "남은 pass가 없습니다.", Toast.LENGTH_LONG).show();
-                    }
-                }else{
-                    Toast.makeText(getApplication(), "남은 제시어가 없습니다", Toast.LENGTH_LONG).show();
+
                 }
+            });
+        userpass.setOnClickListener(new View.OnClickListener() {
 
-            }
-        });
+            @Override
+            public void onClick(View view) {
+                    if (list.size() != 0) {
+                        if (passcount != 0) {
+                            passcount--;
+                            main.setText(list.get(0));
+                            list.remove(0);
+                            usertruetext.setText("정답개수: " + truecount + "  남은 PASS 횟수: " + passcount);
+                        } else {
+                            Toast.makeText(getApplication(), "남은 pass가 없습니다.", Toast.LENGTH_LONG).show();
+                        }
+                    } else {
+                        Toast.makeText(getApplication(), "남은 제시어가 없습니다", Toast.LENGTH_LONG).show();
+                    }
 
-
-//        main.setOnTouchListener(new View.OnTouchListener(){
-//
-//            @Override
-//            public boolean onTouch(View view, MotionEvent motionEvent) {
-//                if(list.size()!=0) {
-//
-//                    main.setText(list.get(0));
-//                    list.remove(0);
-//                }
-//                return false;
-//            }
-//        });
-
+                }
+            });
 
 
     }

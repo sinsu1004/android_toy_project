@@ -37,6 +37,7 @@
         <activity android:name=".activity.test3Activity"/>
         <activity android:name=".activity.startscreen"/>
         <activity android:name=".activity.startproblem"/>
+        <activity android:name=".activity.koreagame"/>
         <activity android:name=".activity.savelist" android:theme="@android:style/Theme.Dialog"/>
     </application>
 

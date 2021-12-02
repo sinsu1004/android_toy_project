@@ -102,6 +102,7 @@ public class Fragment_test1 extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(),startproblem.class);
+                intent.putExtra("name","제시어");
                 intent.putExtra("problemlist",problemlist);
                 startActivity(intent);
 

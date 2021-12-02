@@ -22,6 +22,7 @@
 
         <TextView
             android:id="@+id/time"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:autoSizeTextType="uniform"
@@ -38,6 +39,7 @@
 
         <TextView
             android:id="@+id/problem"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_marginTop="10dp"

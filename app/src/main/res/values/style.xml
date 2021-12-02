@@ -6,4 +6,15 @@
         //텍스트사이즈
         <item name="android:textSize">13dp</item>
     </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- No Title Bar-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+
+    출처: https://commin.tistory.com/63 [Commin의 일상코딩]
 </resources>

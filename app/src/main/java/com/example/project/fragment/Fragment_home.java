@@ -15,12 +15,15 @@ import androidx.fragment.app.Fragment;
 
 import com.example.project.R;
 import com.example.project.activity.MainActivity;
+import com.example.project.activity.koreagame;
 import com.example.project.activity.startproblem;
 
 public class Fragment_home extends Fragment {
     public Fragment_home() {}
     private ImageButton bodyspeak_button;
-
+    private ImageButton speedquiz;
+    private ImageButton koreagame;
+    private ImageButton humanquiz;
     public static Fragment_home newInstance() {
         Fragment_home calendarFragment= new Fragment_home();
         Bundle bundle = new Bundle();
@@ -33,7 +36,9 @@ public class Fragment_home extends Fragment {
         System.out.println("home생성");
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         bodyspeak_button=view.findViewById(R.id.bodyspeak_button);
-
+        speedquiz=view.findViewById(R.id.speedquiz);
+        koreagame=view.findViewById(R.id.koreagame);
+        humanquiz=view.findViewById(R.id.humanquiz);
         bodyspeak_button.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -44,8 +49,31 @@ public class Fragment_home extends Fragment {
             }
         });
 
+        speedquiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(), MainActivity.class);
+                intent.putExtra("name","스피드 퀴즈");
+                startActivity(intent);
+            }
+        });
+        koreagame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(), koreagame.class);
+                intent.putExtra("name","초성 게임");
+                startActivity(intent);
+            }
+        });
 
-
+        humanquiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(), MainActivity.class);
+                intent.putExtra("name","인물 퀴즈");
+                startActivity(intent);
+            }
+        });
 
 
 
