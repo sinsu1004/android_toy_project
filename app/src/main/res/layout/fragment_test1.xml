@@ -12,6 +12,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -25,14 +26,16 @@
                 android:id="@+id/problems"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:hint="제시어를 입력해주세요"/>
+                android:hint="제시어를 입력해주세요" />
 
             <Button
                 android:id="@+id/problemsave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="SAVE" />
+                android:background="#00BFFE"
+                android:text="SAVE"
+                app:iconTint="@color/white" />
 
         </LinearLayout>
 
@@ -43,20 +46,20 @@
 
             <TextView
                 android:id="@+id/problemview"
-                android:scrollbars="vertical"
-                android:textSize="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="370dp"
+                android:scrollbars="vertical"
                 android:textAlignment="center"
+                android:textSize="20dp"
                 android:textStyle="italic" />
 
 
             <ImageButton
-                android:layout_gravity="right"
-                android:background="@color/white"
                 android:id="@+id/back_bt"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="@color/white"
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/back" />
 
@@ -66,21 +69,24 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/start2"
+                android:background="#00BFFE"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:autoSizeTextType="uniform"
+                android:textSize="20dp"
                 android:text="시작" />
+
             <Button
                 android:id="@+id/save2"
+                android:background="#00BFFE"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="40dp"
-                android:autoSizeTextType="uniform"
+                android:textSize="20dp"
                 android:text="저장" />
         </LinearLayout>
 

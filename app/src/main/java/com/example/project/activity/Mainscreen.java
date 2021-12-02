@@ -97,7 +97,7 @@ public class Mainscreen extends AppCompatActivity {
         //페이지 리스너 (viewPager와 TabLayout의 페이지를 맞춰줌)
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         //탭 선택 리스너 (탭 행동 설정)
-        tabLayout.setTabTextColors(Color.BLACK,Color.BLUE);
+        tabLayout.setTabTextColors(Color.BLACK,Color.parseColor("#0070C0"));
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             //선택된 탭일 때
             @Override
@@ -109,13 +109,13 @@ public class Mainscreen extends AppCompatActivity {
 
 
                 //아이콘 색상을 흰색으로 설정
-               // tab.getIcon().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
+                tab.getIcon().setColorFilter(Color.parseColor("#0070C0"), PorterDuff.Mode.SRC_IN);
             }
             //선택되지 않은 탭일 때
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
                 //아이콘 색상을 #0070C0 으로 설정
-             //   tab.getIcon().setColorFilter(Color.parseColor("#0070C0"), PorterDuff.Mode.SRC_IN);
+                tab.getIcon().setColorFilter(Color.BLACK, PorterDuff.Mode.SRC_IN);
             }
 
             @Override
