@@ -16,6 +16,7 @@
         >
 
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/usertime"
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -23,12 +24,13 @@
             android:autoSizeTextType="uniform"
             android:gravity="center" />
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/usermaintext"
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:text="TextView"
+            android:text="다섯글자임"
             android:gravity="center"
-            android:autoSizeTextType="uniform"
+            android:textSize="85dp"
 
             />
         <LinearLayout
@@ -39,10 +41,11 @@
 
             <Button
                 android:id="@+id/usernext"
+                android:background="#00BFFE"
+                android:textSize="20dp"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="80dp"
-                android:autoSizeTextType="uniform"
                 android:text="정답"
                 android:textAlignment="center" />
 
@@ -51,12 +54,14 @@
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
-                android:autoSizeTextType="uniform"
+                android:background="#00BFFE"
+                android:textSize="20dp"
                 android:text="PASS"
                 android:textAlignment="center" />
         </LinearLayout>
 
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/usertruetext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

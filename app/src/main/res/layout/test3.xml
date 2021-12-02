@@ -13,11 +13,12 @@
 
         <TextView
             android:id="@+id/trueView"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:autoSizeTextType="uniform"
+            android:textSize="60dp"
             android:gravity="center"
 
-            android:text="TextView" />
+            android:text="정답 개수: " />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
