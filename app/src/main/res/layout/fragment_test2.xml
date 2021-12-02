@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:id="@+id/countdowntime"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="카운트 시간을 입력해주세요 초단위(기본값 60초)"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/countdowntime_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="저장" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/passnumber"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:digits="0123456789"
+                android:hint="Pass 사용 개수를 입력해주세요 (기본값 3개)"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/passnumber_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="저장" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/nowcount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="카운트 시간 : 60" />
+
+        <TextView
+            android:id="@+id/nowpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="PASS 개수 : 3" />
+
+        <Button
+            android:id="@+id/settingon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:text="설정 저장"
+            android:textSize="60dp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

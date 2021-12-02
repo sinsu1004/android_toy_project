@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="제목: " />
+            <EditText
+                android:id="@+id/readhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="15자 이하로 입력해주세요."
+            />
+        </LinearLayout>
+
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="2px" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="설명: " />
+            <EditText
+                android:id="@+id/readinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="15자 이하로 입력해주세요."
+                />
+
+        </LinearLayout>
+        <View
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+           />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+
+                android:id="@+id/databasesave"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="저장"
+                android:textColor="#ff7a00"
+                android:onClick="mOnClose" />
+        <Button
+
+            android:id="@+id/bt_cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="취소"
+            android:textColor="#ff7a00"
+            android:onClick="mOnClose" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
