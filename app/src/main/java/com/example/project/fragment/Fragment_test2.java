@@ -40,7 +40,7 @@ public class Fragment_test2 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_test2, container, false);
 
 
-        settingbutton=view.findViewById(R.id.settingon);
+
         count=view.findViewById(R.id.countdowntime);
         passcount=view.findViewById(R.id.passnumber);
         nowcount=view.findViewById(R.id.nowcount);
@@ -92,43 +92,6 @@ public class Fragment_test2 extends Fragment {
         });
 
 
-
-        settingbutton.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-               if(!count.getText().toString().equals("") || !passcount.getText().toString().equals("")) {
-                   if(!count.getText().toString().equals("") &&!passcount.getText().toString().equals("")){
-                       ((settings) getActivity().getApplication()).setCount(Integer.parseInt(count.getText().toString()));
-                       ((settings) getActivity().getApplication()).setPasscount(Integer.parseInt(passcount.getText().toString()));
-                       nowcount.setText("카운트 시간 : " + ((settings) getActivity().getApplication()).getCount());
-                       nowpass.setText("PASS 개수 : " + passcount.getText().toString());
-                       count.setText(null);
-                       passcount.setText(null);
-                   }
-                   else if(!count.getText().toString().equals("")){
-                       ((settings) getActivity().getApplication()).setCount(Integer.parseInt(count.getText().toString()));
-                       nowcount.setText("카운트 시간 : " + ((settings) getActivity().getApplication()).getCount());
-                       count.setText(null);
-                   }
-                   else if(!passcount.getText().toString().equals("")){
-                       ((settings) getActivity().getApplication()).setPasscount(Integer.parseInt(passcount.getText().toString()));
-                       nowpass.setText("PASS 개수 : " + passcount.getText().toString());
-                       passcount.setText(null);
-                   }
-
-
-
-
-
-
-
-
-
-               }
-
-            }
-        });
 
 
 

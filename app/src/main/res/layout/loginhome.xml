@@ -72,13 +72,15 @@
             />
 
         <ImageButton
+            android:background="@color/white"
             android:id="@+id/image_start"
             android:layout_marginTop="20dp"
-            android:visibility="invisible"
+            android:scaleType="centerInside"
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_launcher_foreground" />
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+
+            app:srcCompat="@drawable/touch" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

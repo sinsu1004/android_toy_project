@@ -24,8 +24,9 @@
             android:layout_alignParentBottom="true"
             app:tabIndicatorColor="#0070C0"
             app:tabIndicatorGravity="top"
-            app:tabTextColor="#0070C0"
             app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="#0070C0"
+            app:tabTextAppearance="@style/TabText"
 
             />
     </RelativeLayout>

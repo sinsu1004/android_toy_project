@@ -65,20 +65,27 @@ public class Mainscreen extends AppCompatActivity {
     }
     private void loadTabName(){
         tabNames.add("홈");
-        tabNames.add("사용자가 만든 제시어");
+        tabNames.add("제시어 목록");
         tabNames.add("설정");
-        tabNames.add("제시어 내가만들기");
+        tabNames.add("제시어 만들기");
 
     }
 
     @TargetApi(Build.VERSION_CODES.N)
     private void setTabLayout() {
 
+
+
         tabLayout =findViewById(R.id.tab);
+        //ArrayList에 저장된 순서대로 Tab 이름을 지정해줌
         for (String name : tabNames) {
             tabLayout.addTab(tabLayout.newTab().setText(name));
         }
-
+        //Tab 아이콘 설절
+        tabLayout.getTabAt(0).setIcon(R.drawable.home);
+        tabLayout.getTabAt(1).setIcon(R.drawable.list);
+        tabLayout.getTabAt(2).setIcon(R.drawable.settings);
+        tabLayout.getTabAt(3).setIcon(R.drawable.user);
 
     }
     private void setViewPager() {
@@ -90,12 +97,17 @@ public class Mainscreen extends AppCompatActivity {
         //페이지 리스너 (viewPager와 TabLayout의 페이지를 맞춰줌)
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         //탭 선택 리스너 (탭 행동 설정)
+        tabLayout.setTabTextColors(Color.BLACK,Color.BLUE);
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             //선택된 탭일 때
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 //선택된 탭과 연결된 fragment를 가져옴
                 viewPager.setCurrentItem(tab.getPosition());
+
+
+
+
                 //아이콘 색상을 흰색으로 설정
                // tab.getIcon().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
             }
