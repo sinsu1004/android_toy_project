@@ -109,7 +109,10 @@ public class savelist extends Activity {
 
         @Override
         protected void onPostExecute(String s) {   //doInbackground()로 부터 리턴되 값이 onPostExecute()의 매개변수로 넘어오므로 s를 출력한다.
+
             super.onPostExecute(s);
+            Toast.makeText(getApplicationContext(), "저장되었습니다.", Toast.LENGTH_SHORT).show();
+            onBackPressed();
         }
     }
 

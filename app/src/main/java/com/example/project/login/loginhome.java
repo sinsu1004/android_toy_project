@@ -137,12 +137,13 @@ public class loginhome extends AppCompatActivity {
                 } // 닉네임 중복 체크  사용가능 할때
                 else if(datalist.getJSONObject(0).getString("data").equals("no_nickname")){
                     check_text.setText("이미 존재하는 닉네임입니다.");
-                    check_text.setVisibility(View.INVISIBLE);
+                    check_text.setVisibility(View.VISIBLE);
                     image_start.setVisibility(View.INVISIBLE);
                     new_nickname.setText("");
 
                 } // 닉네임 중복 체크 사용 불가능 할때
                 else if(datalist.getJSONObject(0).getString("data").equals("no_device")){
+
 
 
                 }

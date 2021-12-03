@@ -34,8 +34,8 @@ public class test3Activity extends AppCompatActivity {
         Intent intent=new Intent(getApplicationContext(),Mainscreen.class);
         startActivity(intent);
 
-
-        ActivityCompat.finishAffinity(this);
-        System.exit(0);
+//
+//        ActivityCompat.finishAffinity(this);
+//        System.exit(0);
     }
 }
