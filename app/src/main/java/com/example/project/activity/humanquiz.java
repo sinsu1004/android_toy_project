@@ -193,7 +193,7 @@ public class humanquiz extends AppCompatActivity {
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(1000); // 0.5초간 진동
 
-                Intent intent=new Intent(getApplicationContext(),test3Activity.class);
+                Intent intent=new Intent(getApplicationContext(), true_count_view.class);
                 intent.putExtra("truecount",truenum);
                 startActivity(intent);
                 finish();

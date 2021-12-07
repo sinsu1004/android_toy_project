@@ -23,7 +23,7 @@ public class fragment_test3_listview extends LinearLayout {
 
     private void init(Context context) {
         LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.fragment_test3_listview,this,true);
+        inflater.inflate(R.layout.fragment_problem_list_listview,this,true);
 
         testlist1=findViewById(R.id.textlist1);
         testlist2=findViewById(R.id.textlist2);

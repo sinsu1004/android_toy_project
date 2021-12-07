@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class test2Activity extends AppCompatActivity {
+public class bodyspeak_game extends AppCompatActivity {
     private static int count = 60;
     private static int MILLISINFUTURE = 10 * 6000;
     private static int COUNT_DOWN_INTERVAL = 1000;
@@ -57,7 +57,7 @@ public class test2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test2);
+        setContentView(R.layout.bodyspeak_game);
 
         Intent intent = getIntent();
 
@@ -190,7 +190,7 @@ public class test2Activity extends AppCompatActivity {
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(1000); // 0.5초간 진동
 
-                Intent intent=new Intent(getApplicationContext(),test3Activity.class);
+                Intent intent=new Intent(getApplicationContext(), true_count_view.class);
                 intent.putExtra("truecount",truenum);
                 startActivity(intent);
                 finish();

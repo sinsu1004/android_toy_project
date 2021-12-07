@@ -23,8 +23,8 @@ import com.example.project.settings;
 
 import java.util.ArrayList;
 
-public class Fragment_test1 extends Fragment {
-    public Fragment_test1() {}
+public class Fragment_problem_make extends Fragment {
+    public Fragment_problem_make() {}
     private TextView textView;
     private Button save;
     private Button start2;
@@ -35,8 +35,8 @@ public class Fragment_test1 extends Fragment {
     private ArrayList<String> problemlist=new ArrayList<>();
     private Bundle bundle;
 
-    public static Fragment_test1 newInstance() {
-        Fragment_test1 calendarFragment= new Fragment_test1();
+    public static Fragment_problem_make newInstance() {
+        Fragment_problem_make calendarFragment= new Fragment_problem_make();
         Bundle bundle = new Bundle();
         return calendarFragment;
     }
@@ -45,7 +45,7 @@ public class Fragment_test1 extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         System.out.println("제시어 내가만들기");
-        View view = inflater.inflate(R.layout.fragment_test1, container, false);
+        View view = inflater.inflate(R.layout.fragment_problem_make, container, false);
         textView=view.findViewById(R.id.problemview);
         save=view.findViewById(R.id.problemsave);
         save2=view.findViewById(R.id.save2);

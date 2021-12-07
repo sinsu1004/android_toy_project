@@ -3,7 +3,6 @@ package com.example.project.fragment;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,14 +11,10 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.project.HttpConnection;
@@ -29,7 +24,6 @@ import com.example.project.jsontype.datatype;
 import com.example.project.listViewitem;
 import com.example.project.listview.fragment_test3_listview;
 import com.example.project.settings;
-import com.google.android.material.tabs.TabLayout;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -37,8 +31,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class Fragment_test3 extends Fragment {
-    public Fragment_test3() {}
+public class Fragment_problem_list extends Fragment {
+    public Fragment_problem_list() {}
     private JSONArray datalist;
     private Button bodyspeak_button;
     private String serverurl="http://192.168.0.14:5000/sinsu/userproblem";
@@ -46,8 +40,8 @@ public class Fragment_test3 extends Fragment {
     private SingleAdapter adapter=new SingleAdapter();
     private Mainscreen activity;
 
-    public static Fragment_test3 newInstance() {
-        Fragment_test3 calendarFragment= new Fragment_test3();
+    public static Fragment_problem_list newInstance() {
+        Fragment_problem_list calendarFragment= new Fragment_problem_list();
         Bundle bundle = new Bundle();
         return calendarFragment;
     }
@@ -56,7 +50,7 @@ public class Fragment_test3 extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         System.out.println("사용자가 만든 제시어");
-        View view = inflater.inflate(R.layout.fragment_test3, container, false);
+        View view = inflater.inflate(R.layout.fragment_problem_list, container, false);
         activity= (Mainscreen) getActivity();
         SearchView searchView =view.findViewById(R.id.search_view);
         lv=view.findViewById(R.id.listView);

@@ -1,7 +1,6 @@
 package com.example.project.fragment;
 
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,8 +15,8 @@ import androidx.fragment.app.Fragment;
 import com.example.project.R;
 import com.example.project.settings;
 
-public class Fragment_test2 extends Fragment {
-    public Fragment_test2() {}
+public class Fragment_setting extends Fragment {
+    public Fragment_setting() {}
     private Button settingbutton;
     private Button count_bt;
     private Button passcount_bt;
@@ -27,8 +26,8 @@ public class Fragment_test2 extends Fragment {
     private TextView nowpass;
     private TextView textView5;
 
-    public static Fragment_test2 newInstance() {
-        Fragment_test2 calendarFragment= new Fragment_test2();
+    public static Fragment_setting newInstance() {
+        Fragment_setting calendarFragment= new Fragment_setting();
         Bundle bundle = new Bundle();
         return calendarFragment;
     }
@@ -37,7 +36,7 @@ public class Fragment_test2 extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         System.out.println("설정");
-        View view = inflater.inflate(R.layout.fragment_test2, container, false);
+        View view = inflater.inflate(R.layout.fragment_setting, container, false);
 
 
 

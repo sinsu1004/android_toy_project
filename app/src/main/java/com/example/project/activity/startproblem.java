@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Vibrator;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -111,7 +110,7 @@ public class startproblem extends AppCompatActivity {
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(1000); // 0.5초간 진동
 
-                Intent intent=new Intent(getApplicationContext(),test3Activity.class);
+                Intent intent=new Intent(getApplicationContext(), true_count_view.class);
                 intent.putExtra("truecount",truecount);
                 startActivity(intent);
                 finish();

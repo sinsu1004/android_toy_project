@@ -5,17 +5,16 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import com.example.project.R;
 
-public class test3Activity extends AppCompatActivity {
+public class true_count_view extends AppCompatActivity {
     private TextView imfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test3);
+        setContentView(R.layout.true_count_view);
 
         Intent intent = getIntent();
         int truecount = (int)intent.getSerializableExtra("truecount");

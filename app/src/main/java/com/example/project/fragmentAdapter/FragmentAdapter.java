@@ -8,9 +8,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.project.fragment.Fragment_home;
-import com.example.project.fragment.Fragment_test1;
-import com.example.project.fragment.Fragment_test2;
-import com.example.project.fragment.Fragment_test3;
+import com.example.project.fragment.Fragment_problem_make;
+import com.example.project.fragment.Fragment_setting;
+import com.example.project.fragment.Fragment_problem_list;
 
 
 public class FragmentAdapter extends FragmentPagerAdapter {
@@ -30,11 +30,11 @@ public class FragmentAdapter extends FragmentPagerAdapter {
             case 0:
                 return Fragment_home.newInstance();
             case 1:
-                return Fragment_test3.newInstance();
+                return Fragment_problem_list.newInstance();
             case 2:
-                return Fragment_test2.newInstance();
+                return Fragment_setting.newInstance();
             case 3:
-                return Fragment_test1.newInstance();
+                return Fragment_problem_make.newInstance();
 
             default:
                 return null;

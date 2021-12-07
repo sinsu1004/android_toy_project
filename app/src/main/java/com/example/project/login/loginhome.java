@@ -19,13 +19,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.project.HttpConnection;
 import com.example.project.R;
 import com.example.project.activity.Mainscreen;
-import com.example.project.activity.test3Activity;
 import com.example.project.jsontype.datatype;
 import com.example.project.settings;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 public class loginhome extends AppCompatActivity {
 

@@ -132,7 +132,7 @@ public class startscreen extends AppCompatActivity {
                 Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(1000); // 0.5초간 진동
 
-                Intent intent=new Intent(getApplicationContext(),test2Activity.class);
+                Intent intent=new Intent(getApplicationContext(), bodyspeak_game.class);
                 intent.putExtra("namelist",namelist);
                 intent.putExtra("imagemap",imagemap);
                 startActivity(intent);
